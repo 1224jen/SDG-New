@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></head>
+<body>
+    
+    <div id="topMenu">
+        <div class="wrap">
+        <div id="topLinks">
+                <ul>
+                    <li> 
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="donate.html">Donate</a>
+                     </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+               </ul>
+              
+        
+     </div>
+
+    <div class="wrap">
+        <div id="banner">
+            <h1 class="logo">InfoLab</h1>
+            <div id="action">
+                <a  href="donate.html">Home></a>
+             </div>
+        </div>
+    </div>
+    <button class="tablink" onclick="openPage('The 17 SDG', this, 'White')">The 17 SDG</button>
+<button class="tablink" onclick="openPage('How To Reduce Your Waste', this, 'white')" id="defaultOpen">How To Reduce Your Waste</button>
+<button class="tablink" onclick="openPage('7 Hacks to recycling those plastics', this, 'white')">7 Hacks to recycling those plastics</button>
+<button class="tablink" onclick="openPage('Is Expired Food Really Bad for You?', this, 'white')">Is Expired Food Really Bad for You?</button>
+
+<div id="The 17 SDG" class="tabcontent">
+  <h3>The 17 SDG</h3>
+  <p>
+    Our World, Our Future: A Look at the 17 Sustainable Development Goals<br>
+    In 2015, the world came together to create a roadmap for a better future.This roadmap,<br> known as the Sustainable Development Goals (SDGs), outlines 17 ambitious yet achievable objectives<br> aimed at addressing global challenges and building a more sustainable and equitable world for all.<br>
+    
+    From eradicating poverty and hunger to ensuring quality education and clean water for all,<br> the SDGs encompass a wide range of interconnected issues.<br>Achieving these goals requires a collective effort from individuals,<br> governments, and organizations across the globe.<br>
+    
+    This introductory section serves as a starting point for your exploration of the SDGs. <br> We will delve deeper into each of the 17 goals, understanding their significance, exploring the challenges<br> and opportunities they present, and showcasing inspiring<br> examples of progress being made.<br>
+    
+    Join us on this journey as we discover how we can all play a role in creating a future where<br> everyone thrives - a future where the SDGs become a reality.</p>
+</div>
+
+<div id="How To Reduce Your Waste" class="tabcontent">
+  <h3>How To Reduce Your Waste</h3>
+  <p>Our planet is groaning under the weight of our waste.<br> From overflowing landfills to choked oceans, the consequences<br>of our throwaway culture are becoming increasingly evident.<br> But amidst this daunting reality, there's a flicker of hope.<br> Each of us, through conscious choices and everyday actions, has the power<br>to make a difference.
+
+  </p> 
+</div>
+
+<div id="7 Hacks to recycling those plastics" class="tabcontent">
+  <h3>7 Hacks to recycling those plastics</h3>
+  <p>Plastic. It's ubiquitous in our lives, from the water bottles we sip to the<br> packaging that surrounds our purchases. While its convenience is undeniable,<br> its environmental footprint is equally concerning. So, we turn to recycling,<br> hoping to give plastic a second life. But is the solution as simple as tossing e<br>verything into the blue bin?</p>
+</div>
+
+<div id="Is Expired Food Really Bad for You?" class="tabcontent">
+  <h3>Is Expired Food Really Bad for You?</h3>
+  <p>We've all been there, staring at a carton of milk or a bag of chips, wondering if it's still safe to eat<br> based on the cryptic date stamped on the packaging.<br>But what do these "expiry dates" truly mean? Do they signify an absolute safety deadline, <br>or is there more to the story?
+
+    This journey unravels the mystery behind food expiry dates.<br> We'll explore different types of dates like<br> "sell-by," "use-by," and "best-if-used-by," understanding what they signify and why they exist.<br>We'll delve into the factors that influence food quality and safety beyond the labeled date, empowering you to<br> make informed decisions about the food you consume..</p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+<div class="play">
+<table class="footer">
+    <tr>
+        <td>
+            <h3>About us</h3>
+              </td>
+        <td>
+            <h3>Useful links</h3>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                
+            </ul>
+        </td>
+        <td>
+            <h3> Contact</h3>
+            <p>001 28982 28938</p>
+            <p>readall@hooked.com</p>
+        </td>
+    </tr>
+   </table>     
+</div>
+</body>
+</html> 
